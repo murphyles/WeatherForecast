@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.body {
+    background: linear-gradient(90deg, #87CEEB, #00BFFF, #1E90FF);
+    height: 100vh;
+    margin: 0;
+    animation: gradientAnimation 10s ease infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-flow: wrap column;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+    font-family: "Instrument Sans", serif;
+    max-width: 320px;
+}

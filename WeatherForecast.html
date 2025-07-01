@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WeatherForecast</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./WeatherForecast.css">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon-32x32.png" type="image/png">
+        <!-- <link rel="apple-touch-icon" href="./images/apple-touch-icon.png"> -->
+    </head>
+    <body class="body">
+        <main class="main">
+            <form class="form" action="./WeatherForecast2.html">
+                <div class="logo-container">
+                    <img class="icon-logo" src="./images/weather-icon.svg" alt="logo">
+                    <h1 class="logo">Weather Forecast</h1>
+                </div>
+                <div class="divider"></div>
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Enter city name"
+                    class="location"
+                >
+                <div class="or-container">
+                    <div class="line"></div>
+                    <div class="spandiv">
+                        <span class="item span">or</span>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <button type="submit" class="button">Get device location</button>
+            </form>
+        </main>
+        <script>
+            const btn = document.querySelector('button');
+            btn.addEventListener('click', function () {
+                window.location.href = './WeatherForecast2.html'
+            })
+
+            const inpt = document.querySelector('input')
+            const form = document.querySelector('.form')
+            form.addEventListener("keydown", function(e) {
+            let inputText = document.inpt.value.trim()
+                    if (e.key === "Enter" && inputText.length === 0) { 
+                        e.preventDefault()
+                    }
+                })
+
+            inpt.addEventListener('keydown', (event) => {
+                let inputText = document.inpt.value.trim()
+                if (inputText.length > 0 && event.key === 'Enter'){ 
+                    event.preventDefault()
+                    window.location.href = './WeatherForecast2.html'
+            }})
+        </script>
+    </body>
+</html>

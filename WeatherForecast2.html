@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WeatherForecast</title>
+        <link rel="stylesheet" href="WeatherForecast2.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon-32x32.png" type="image/png">
+    </head>
+    <body class="body">
+        <main class="main">
+            <form class="form">
+                <div class="logodiv">
+                    <img class="goback" src="./images/Screenshot 2025-01-03 at 20.35.42.png" alt="go back">
+                    <h1 class="logo">Weather Forecast</h1>
+                </div>
+                <div class="divider"></div>
+                <div class="info-container1">
+                    <img class="icon" src="./images/weather-icon.svg" alt="Sun behind the clouds icon">
+                    <h1 class="temperature">13&deg;C</h1>
+                    <div class="condition">Broken clouds</div>
+                    <div class="gl-container">
+                        <img class="geoloc" src="./images/placeholder.png" alt="geolocation icon">
+                        <div class="loc">Kathmandu, Nepal</div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="info-container2">
+                    <div class="elem-container">
+                        <img class="elem" src="./images/thermometer.png" alt="thermometer icon">
+                        <div class="mini-cont">
+                            <h2 class="item">17&deg;C</h2>
+                            <p class="name">Feels like</p>
+                        </div>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="elem-container">
+                        <img class="elem" src="./images/humidity copy.png" alt="water drop, humidity icon">
+                        <div class="mini-cont">
+                            <h2 class="item">84%</h2>
+                            <p class="name">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="elem-container">
+                        <img class="elem" src="./images/315686_wind_icon.png" alt="wind icon">
+                        <div class="mini-cont">
+                            <h2 class="item">10mph</h2>
+                            <p class="name">Wind speed</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <script>
+            const goBack = document.querySelector('.goback')
+            goBack.addEventListener('click', function() {
+                window.location.href = './WeatherForecast.html'
+            })
+        </script>
+    </body>
+</html>

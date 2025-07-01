@@ -1,4 +1,3 @@
-# WeatherForecast
 # Weather Forecast App  
 
 A simple web application for checking current weather conditions with city search or device geolocation functionality.  
